@@ -118,13 +118,10 @@ void printResult(int resultbasis[])
 
 int main()
 {
-	printf("Sujan Dumaru \n");
-	printf("UTA ID: 1001539502 \n");
-
 	int dices[numofdices]; //Creating array to store the random numbers generated for the game
-    int numberofReRolls = 4; //Maximum Number of Re-Rolls allowed in the game
-    char exit[20];
-    int loopbreaker = 1;
+    	int numberofReRolls = 4; //Maximum Number of Re-Rolls allowed in the game
+    	char exit[20];
+    	int loopbreaker = 1;
 
 
         do
@@ -161,7 +158,8 @@ int main()
                     printf("\nYou have reached maximum limit to re-roll. \n");
                     break;
             }
-        }while (strcmp(exit,"y") == 0 || strcmp(exit,"yes") == 0 || strcmp(exit,"Y") == 0 || strcmp(exit,"Yes") == 0); //Ending the game as per the player's desired input
+        }
+	while (strcmp(exit,"y") == 0 || strcmp(exit,"yes") == 0 || strcmp(exit,"Y") == 0 || strcmp(exit,"Yes") == 0); //Ending the game as per the player's desired input
 
 	return 0;
 
